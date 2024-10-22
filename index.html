@@ -1,0 +1,61 @@
+<!-- THE Biggest problem with my code is beacuse of padding veen if i amnot ob navbar my cursor turns into pointer iwould recommend looking at claude and harry code to get better  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Colour Website</title>
+    <style>
+        :root{
+           --primarycolor:rgb(138, 201, 224);
+           --secondarycolor:rgb(13, 94, 137);
+           --textcolor:white;
+        }
+        /* :root{
+           --primarycolor:rgb(137, 109, 177);
+           --secondarycolor:rgb(129, 28, 206);
+           --textcolor:wheat ;
+        } */
+        body{
+            background-color: var(--primarycolor);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            /* for some reason it only works here and not on inside ul style tag  */
+        }
+
+
+        nav{
+            list-style: none;
+            color: var(--textcolor);
+            background-color: var(--secondarycolor);
+            font-weight: bolder;
+            font-size: 23px;
+            padding: 12px 0px;
+            cursor: pointer;
+            }
+        ul li{
+            display: inline;
+            /* margin: 33px;   you can keep either margin or padding zero */
+            padding: 23px;
+           }
+        ul li a{
+            color: var(--textcolor);
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
